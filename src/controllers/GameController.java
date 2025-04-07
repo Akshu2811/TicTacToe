@@ -15,29 +15,33 @@ public class GameController {
             List<WinningStrategy> winningStrategies
 
     ){
-        return null;
+        //create new game object
+        return new Game(size, players, winningStrategies);
 
     }
     public void makeMove(Game game){
-
+        game.makeMove();
 
     }
 
     public GameState getGameState(Game game){
 
-        return null;
+        return game.getGameState();
     }
 
     public void displayBoard(Game game){
-
+        game.displayBoard();
 
     }
 
     public Player getWinner(Game game){
-        return null;
+
+        return game.getWinner();
     }
 
     public void undo(Game game){
+
+        game.undo();
 
     }
 
